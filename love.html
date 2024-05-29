@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samiksha - Mi Amor</title>
+    <link rel="shortcut icon" href="./favicon_cake.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styleLove.css">
+</head>
+<body>
+    <section class="animation-box">
+
+        <div class="first-text">When I'm with you, everything feels right...</div>
+        <!-- <img src="./images/hero-img-3.jpg" alt="Image 1" class="first-image"> -->
+
+        <div class="second-text">My favourite part of every day is the time I get to spend with you...</div>
+        <!-- <img src="path/to/your/image2.jpg" alt="Image 2" class="second-image"> -->
+
+        <div class="third-text">I love seeing you smile...</div>
+        <!-- <img src="path/to/your/image3.jpg" alt="Image 3" class="third-image"> -->
+
+        <div class="fourth-text">Now that I've found you, I'm never going to let you go</div>
+        <!-- <img src="path/to/your/image4.jpg" alt="Image 4" class="fourth-image"> -->
+
+        <div class="fifth-text" id="last_animation">Whenever I count my blessings, you are at the top of my list</div>
+        <!-- <img src="path/to/your/image5.jpg" alt="Image 5" class="fifth-image"> -->
+
+    </section>
+
+    <script>
+        const lastAnimation = document.getElementById("last_animation");
+        lastAnimation.addEventListener('animationend', function() {
+            window.location.href = 'index.html#about';
+        });
+    </script>
+</body>
+</html>

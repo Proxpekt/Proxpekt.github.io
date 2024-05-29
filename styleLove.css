@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    margin: 0; 
+    overflow: hidden; 
+}
+
+.animation-box {
+    width: 100vw; 
+    height: 100vh; 
+    background-color: black;
+    position: relative;
+}
+
+.first-text {
+    font-size: 10vw; 
+    position: absolute;
+    left: 2.5rem;
+    top: 5rem;
+    opacity: 0;
+    animation: topFadeOut 5s forwards;
+    color: white;
+}
+
+.second-text {
+    font-size: 8vw; 
+    position: absolute;
+    top: 20vh; 
+    opacity: 0;
+    animation: rightFadeInOut 6s 3s forwards;
+    color: #ccc;
+}
+
+.third-text {
+    font-size: 3vw; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: rotate(-90deg);
+    transform-origin: center center; 
+    animation: topFadeOutVertical 6s 7.5s forwards;
+    color: #a3ddf0;
+    white-space: nowrap;
+}
+
+.fourth-text {
+    font-size: 8vw; 
+    position: absolute;
+    top: 30vh; 
+    left: 10%;
+    opacity: 0;
+    color: #f0a3be;
+    animation: fadeInOut 9s 8.5s forwards;
+}
+
+.fifth-text {
+    font-size: 10vw; 
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+    opacity: 0;
+    color: #f0eba3;
+    animation: bottomFadeOut 9s 10s forwards;
+}
+
+@keyframes topFadeOut {
+    0% {
+        top: -10vh; 
+        opacity: 0;
+    }
+    75% {
+        top: 25%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes bottomFadeOut {
+    0% {
+        bottom: -10vh; 
+        opacity: 0;
+    }
+    75% {
+        bottom: 25%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes topFadeOutVertical {
+    0% {
+        top: -10vh; 
+        opacity: 0;
+    }
+    75% {
+        top: 50%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rightFadeInOut {
+    0% {
+        right: -10vw;
+        opacity: 0;
+    }
+    75% {
+        right: 10vw;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
